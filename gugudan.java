@@ -9,8 +9,9 @@ public class gugudan {
 		int n = 0;
 		System.out.print("출력할 단:");
 		n = sc.nextInt();
-
-		if (n == 0) {
+		if (n < 0) {
+			System.out.println("구구단 출력 불가");
+		} else if (n == 0) {
 			for (int i = 1; i < 10; i++) {
 				for (int j = 2; j < 10; j++) {
 					System.out.printf("%d X %d = %d\t", j, i, j * i);
